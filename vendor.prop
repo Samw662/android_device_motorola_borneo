@@ -20,5 +20,9 @@ ro.surface_flinger.set_touch_timer_ms=0
 # Keymaster
 ro.hardware.keystore_desede=true
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Radio
 ro.vendor.radio.imei.sv=33
