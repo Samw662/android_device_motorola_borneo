@@ -44,5 +44,13 @@ PRODUCT_COPY_FILES += \
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/borneo/borneo-vendor.mk)
 
+# Preopt SystemUI.
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI  # For AOSP
+
+# Compile SystemUI on device with `speed`.
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.systemuicompilerfilter=speed
+
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
