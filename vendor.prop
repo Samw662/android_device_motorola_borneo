@@ -3,9 +3,13 @@ persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.voicecall=false
 persist.vendor.audio.fluence.voicecomm=true
 ro.audio.monitorRotation=true
+persist.vendor.audio.voicecall.speaker.stereo=false
 
 # Camera
 persist.vendor.camera.physical.num=4
+
+# Multi-gen LRU
+persist.device_config.mglru_native.lru_gen_config=all
 
 # Display
 persist.sys.sf.color_mode=7
